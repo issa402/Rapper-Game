@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip gunshotSound;
     public AudioClip hitSound;
     public AudioClip deathSound;
+    public AudioClip applePickupSound;
+    public AudioClip arenaShrinkSound;
     
     // Volume settings
     [Range(0f, 1f)]
@@ -61,6 +63,16 @@ public class AudioManager : MonoBehaviour
     public void PlayDeath()
     {
         PlayEffect(deathSound);
+    }
+    
+    public void PlayApplePickup()
+    {
+        PlayEffect(applePickupSound);
+    }
+    
+    public void PlayArenaShrink()
+    {
+        PlayEffect(arenaShrinkSound);
     }
     
     private void PlayEffect(AudioClip clip)
