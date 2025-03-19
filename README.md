@@ -1,53 +1,47 @@
-# Rapper Battle Game
+# Rapper Battle Royale
 
-A fun and interactive rap battle game built with React and TypeScript where players can engage in epic rap battles!
+A Unity-based battle royale game featuring AI-controlled rappers, inspired by simulationvoid's square battle concept.
+
+## Game Overview
+
+In this unique battle royale experience, AI-controlled rappers compete against each other in an automated arena. Each rapper moves independently, picking up weapons and engaging in combat without player intervention.
 
 ## Features
 
-- Turn-based rap battle gameplay
-- Dynamic health bars
-- Various attack moves with different damage levels
-- Responsive design
-- Animated battle effects
+- Fully automated AI-controlled rappers
+- Dynamic weapon pickup system
+- Multiple weapon types (guns and knives)
+- Projectile-based combat system
+- Audio management system
 
-## Getting Started
+## Technical Implementation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/issa402/Rapper-Game.git
-```
+The game is built using Unity and C#, featuring:
 
-2. Install dependencies:
-```bash
-cd Rapper-Game
-npm install
-```
+- AI movement and combat logic
+- Weapon system with inheritance (abstract Weapon class)
+- Projectile physics
+- Collision detection
+- Game state management
 
-3. Start the development server:
-```bash
-npm start
-```
+## Project Structure
 
-4. Open [http://localhost:3000](http://localhost:3000) to play the game
+- `RapperController.cs`: Handles rapper AI behavior and movement
+- `Weapon.cs`: Abstract base class for all weapons
+- `Gun.cs`: Implementation of ranged weapons
+- `Knife.cs`: Implementation of melee weapons
+- `Bullet.cs`: Projectile behavior and collision
+- `GameManager.cs`: Core game loop and state management
+- `AudioManager.cs`: Sound effect and music handling
 
-## How to Play
+## Setup Guide
 
-1. The game starts with both players having 100 health points
-2. Players take turns attacking each other
-3. Choose from different rap moves with varying damage levels:
-   - Freestyle Flow (15 damage)
-   - Sick Burn (25 damage)
-   - Epic Wordplay (20 damage)
-   - Ultimate Diss (30 damage)
-4. The first player to reduce their opponent's health to 0 wins!
+See `PREFAB_SETUP.md` for detailed instructions on setting up the Unity prefabs and scene configuration.
 
-## Technologies Used
+## Contributing
 
-- React
-- TypeScript
-- Styled Components
-- Modern CSS
+Feel free to submit issues and enhancement requests!
 
 ## License
 
-MIT
+MIT License
